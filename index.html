@@ -8,6 +8,50 @@
     <title>ARQUIVOS 616 | H.A.M.M.E.R. | CRONOLOGIA PRÉ-AXIAL</title>
     <link rel="stylesheet" href="axial-616.css">
     <script src="axial-616.js" defer></script>
+
+<style id="axial-616-text-justification">
+/* ==========================================================
+   JUSTIFICAÇÃO DOS TEXTOS NARRATIVOS — ARQUIVOS 616
+   ========================================================== */
+
+.content-inner > p:not(.terminal-cmd) {
+    text-align: justify;
+    text-align-last: left;
+    text-justify: inter-word;
+    hyphens: auto;
+    -webkit-hyphens: auto;
+    overflow-wrap: break-word;
+    word-break: normal;
+}
+
+/* Mantém os elementos técnicos e de interface alinhados à esquerda. */
+.terminal-cmd,
+.analog-subtitle,
+.monitor-caption,
+.system-alert-banner,
+.matriz-meta,
+.system-brand,
+.system-status,
+.accordion-header,
+.back-btn {
+    text-align: left;
+    text-align-last: auto;
+    hyphens: none;
+    -webkit-hyphens: none;
+}
+
+/* Preserva a justificação em dispositivos móveis. */
+@media (max-width: 768px) {
+    .content-inner > p:not(.terminal-cmd) {
+        text-align: justify;
+        text-align-last: left;
+        text-justify: inter-word;
+        hyphens: auto;
+        -webkit-hyphens: auto;
+    }
+}
+</style>
+
 </head>
 <body>
 
